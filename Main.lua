@@ -173,7 +173,7 @@ local CacheObject = { }; do
 	end
 
 	CacheObject.Offset = Vector3New( 0, -.2, 0 );
-	CacheObject.Size = Vector3New( 4.2, 8, 0 );
+	CacheObject.Size = Vector3New( 4.2, 5, 0 );
 
 	CacheObject.Position = Vector3Zero;
 	CacheObject.Transparency = 0;
