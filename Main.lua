@@ -173,7 +173,7 @@ local CacheObject = { }; do
 	end
 
 	CacheObject.Offset = Vector3New( 0, -.2, 0 );
-	CacheObject.Size = Vector3New( 4.2, 5, 0 );
+	CacheObject.Size = Vector3New( 4.2, 8, 0 );
 
 	CacheObject.Position = Vector3Zero;
 	CacheObject.Transparency = 0;
@@ -194,7 +194,7 @@ local CacheObject = { }; do
 		end
 		
 		function CacheObject : SetDeathState( State )
-			if ( self.Dead ~= State ) then
+			if ( self.Dead ~= State ) and ( State ) then
 				local Callback = self.DeathCallback;
 				
 				if ( Callback ) then
