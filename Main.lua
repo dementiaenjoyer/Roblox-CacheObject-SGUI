@@ -26,7 +26,9 @@ local MathRound = math.round;
 local Color3New = Color3.new;
 
 local UDim2New = UDim2.new;
+
 local MathTan = math.tan;
+local MathRad = math.rad;
 
 local TypeOf = typeof;
 
@@ -211,7 +213,7 @@ local CacheObject = { }; do
 			end
 
 			local Distance = ScreenPosition.Z;
-			local Scale = ( 2 * CurrentCamera.ViewportSize.Y ) / ( ( 2 * Distance * MathTan( CurrentCamera.FieldOfView ) ) * 2 );
+			local Scale = ( 2 * CurrentCamera.ViewportSize.Y ) / ( ( 2 * Distance * MathTan( MathRad( CurrentCamera.FieldOfView ) * .5 ) ) * 2 );
 
 			local Size = self.Size;
 				local SizeX = Size.X;
