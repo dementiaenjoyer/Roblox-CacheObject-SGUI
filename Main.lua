@@ -162,7 +162,7 @@ local CacheObject = { }; do
 		end
 
 		for ObjectName, Value in Elements do
-			Elements[ ObjectName ] = Value( self, Parent );
+			Elements[ ObjectName ] = Value( ClassObject, Parent );
 		end
 
 		if ( InitCallback ) then
