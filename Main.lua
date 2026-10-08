@@ -8,7 +8,7 @@ local CurrentCamera = Workspace.CurrentCamera;
 
 -- Cache
 local ColorSequenceKeypointNew = ColorSequenceKeypoint.new;
-local InstanceNew = InstanceNew or Instance.new; -- InstanceNew check is for homohack's Instance.new replacement "MakeCollectedInstance" function.
+local InstanceNew = c_InstanceNew or Instance.new; -- InstanceNew check is for homohack's Instance.new replacement "MakeCollectedInstance" function.
 local ApplyStrokeMode = Enum.ApplyStrokeMode;
 
 local ColorSequenceNew = ColorSequence.new;
